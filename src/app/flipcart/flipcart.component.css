@@ -1,0 +1,74 @@
+main{
+    background-color: rgb(128, 103, 103);
+    width: 100vw;
+    height: 100vh;
+}
+.top{
+    background-color: dodgerblue;
+    height: 40%;
+    width: 100%;
+    display: flex;
+}
+input{
+    width: 200px;
+    height: 30px;
+}
+.left{
+    width: 60%;
+}
+.right{
+     width: 30%;
+     margin: 4px;
+     border-radius: 12px;
+     display: flex;
+     align-items:center;
+     flex-direction: column;
+}
+.button{
+    background-color:rgb(64, 64, 240);
+    color: white;
+    padding: 10px 32px;
+    margin: 4px;
+    border-radius: 12px;
+}
+.button1{
+    background-color: rgb(233, 233, 54);
+    color: black;
+    padding: 6px 32px;
+    margin: 4px;
+    border-radius: 8px;
+}
+.button2{
+    background-color: rgb(5, 51, 70);
+    color: rgb(20, 3, 3);
+    padding: 6px 32px;
+    margin: 4px;
+    border-radius: 8px;
+}
+.button3{
+   background-color: rgb(32, 16, 16);
+    color: white;
+    padding: 5px 32px;
+    margin: 4px;
+    border-radius: 8px;
+}
+.button4{
+    background-color: green;
+    color: white;
+    padding: 5px 20px;
+    margin: 4px;
+    border-radius: 10px;
+}
+.buttom{
+    background-color: rgb(41, 22, 15);
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.delete{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding: 8px 20px;
+}

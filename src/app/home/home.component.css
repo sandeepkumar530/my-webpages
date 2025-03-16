@@ -1,0 +1,22 @@
+.main{
+    background-color: rgb(78, 201, 201);
+    display: flex;
+}
+.left{
+    width: 20%;
+    height: 100vh;
+    background-color: crimson;
+    text-align: center;
+}
+.right{
+    width: 80%;
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logout{
+    color: blue;
+    background-color: forestgreen;
+    
+}
