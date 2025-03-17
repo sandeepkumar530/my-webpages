@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./databinding.component.css']
 })
 export class DatabindingComponent {
+  click(){
+    alert("Hellooo!");
+  }
+  submit(){
+    alert("Hi");
+  }
+  Age:number=45;
+  name:string='Sudip';
+  
+  isData:boolean=true;
+  
+  
+  }
+  
 
-}

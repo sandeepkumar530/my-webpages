@@ -1,1 +1,35 @@
-<p>products works!</p>
+<p>produts works!</p>
+<h1>products</h1>
+<table border="2px">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Rating</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+        <td>{{product.name}}</td>
+        <td>{{product.rating}}</td>
+        <td>{{product.price}}</td>
+        </tr>
+    </tbody>
+</table>
+<ol>
+    <li *ngFor="let state of  states">{{state}}</li>
+</ol>
+<Select>
+    <option *ngFor="let state of states">{{state}}</option>
+</Select>
+
+<p *ngIf="!isVisible">welcome to mohithIT</p>
+<p *ngIf="isVisible">Thankyou forJoining</p>
+
+<tr *ngFor="let product of products">
+    <td>{{product.name}}</td>
+    <td [ngStyle]="{'color':product.price<2000?'green':'red'}">{{product.price}}></td>
+    <td [ngClass]="{'green':product.rating>4,'red':product.rating<2,'yellow':product.rating>2&&product.rating<4}">{{product.rating}}</td>
+</tr>
+<!-- pipes -->
+<h1>{{newDate|date:'yyy-MM-dd'}}</h1>

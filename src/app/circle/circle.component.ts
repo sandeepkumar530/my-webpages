@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./circle.component.css']
 })
 export class CircleComponent {
+  radius:number=0;
+  result:number=0;
+area(){
+  this.result=3.141*(this.radius*this.radius);
+}
+perimeter(){
+  this.result=2*3.141*this.radius;
+}
 
 }

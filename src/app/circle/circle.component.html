@@ -1,2 +1,8 @@
 <p>circle works!</p>
-
+<div class="main">
+    <label>Radius</label>
+    <input type="number"[(ngModel)]='radius'><br>
+    <button (click)="area()">Area</button>
+    <button (click)="perimeter()">Perimeter</button>
+    <h2>RESULT:{{result}}</h2>
+</div>

@@ -1,2 +1,8 @@
 <p>databinding works!</p>
-
+<button (click)="click()">ClickMe!</button>
+<input type="text"(keyup)="submit()">
+<!-- inter polation -->
+ <h1>Name:{{name}}</h1>
+ <h3>Age:{{Age}}</h3>
+ <!-- property binding -->
+  <button [disabled]="isData">Submit</button>

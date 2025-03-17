@@ -10,6 +10,7 @@ import { BmiComponent } from './bmi/bmi.component';
 import { ProductsComponent } from './products/products.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { FlipcartComponent } from './flipcart/flipcart.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -23,6 +24,7 @@ const routes: Routes = [
    {path:'directives',component:ProductsComponent},
    {path:'employee',component:EmployeeComponent},
    {path:'flipcart',component:FlipcartComponent},
+   {path:'vehicle',component:VehicleComponent}
   ]}
 ];
 @NgModule({

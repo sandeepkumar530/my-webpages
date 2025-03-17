@@ -1,2 +1,9 @@
 <p>bmi works!</p>
-
+<div class="main">
+    <label>height</label>
+        <input type="number"[(ngModel)]='height'><br><br>
+        <label>weight</label>
+        <input type="number" [(ngModel)]="weight"><br><br>
+        <button (click)="bmi()">calculate</button>
+        <h2>RESULT:{{result}}</h2>
+        </div>

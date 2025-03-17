@@ -1,0 +1,10 @@
+.main{
+    margin-top: 200px;
+    margin-left: 200px;
+    text-align: center;
+    padding-top: 70px;
+    height:250px;
+    width:350px;
+    background-color: rgb(161, 196, 67);
+    border-radius: 25px;
+}

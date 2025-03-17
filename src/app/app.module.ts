@@ -13,6 +13,9 @@ import { BmiComponent } from './bmi/bmi.component';
 import { ProductsComponent } from './products/products.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { FlipcartComponent } from './flipcart/flipcart.component';
+import { FormsModule } from '@angular/forms';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,11 +29,14 @@ import { FlipcartComponent } from './flipcart/flipcart.component';
     BmiComponent,
     ProductsComponent,
     EmployeeComponent,
-    FlipcartComponent
+    FlipcartComponent,
+    VehicleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
