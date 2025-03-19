@@ -12,6 +12,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { FlipcartComponent } from './flipcart/flipcart.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { PinterestComponent } from './pinterest/pinterest.component';
+import { AccountsComponent } from './accounts/accounts.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -26,7 +27,8 @@ const routes: Routes = [
    {path:'employee',component:EmployeeComponent},
    {path:'flipcart',component:FlipcartComponent},
    {path:'vehicle',component:VehicleComponent},
-   {path:'pinterest',component:PinterestComponent}
+   {path:'pinterest',component:PinterestComponent},
+   {path:'accounts',component:AccountsComponent}
   ]}
 ];
 @NgModule({

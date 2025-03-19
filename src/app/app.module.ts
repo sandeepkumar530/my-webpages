@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PinterestComponent } from './pinterest/pinterest.component';
+import { AccountsComponent } from './accounts/accounts.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { PinterestComponent } from './pinterest/pinterest.component';
     EmployeeComponent,
     FlipcartComponent,
     VehicleComponent,
-    PinterestComponent
+    PinterestComponent,
+    AccountsComponent
   ],
   imports: [
     BrowserModule,
