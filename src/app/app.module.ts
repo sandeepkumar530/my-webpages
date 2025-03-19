@@ -16,6 +16,7 @@ import { FlipcartComponent } from './flipcart/flipcart.component';
 import { FormsModule } from '@angular/forms';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PinterestComponent } from './pinterest/pinterest.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProductsComponent,
     EmployeeComponent,
     FlipcartComponent,
-    VehicleComponent
+    VehicleComponent,
+    PinterestComponent
   ],
   imports: [
     BrowserModule,
