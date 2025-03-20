@@ -13,11 +13,12 @@ import { BmiComponent } from './bmi/bmi.component';
 import { ProductsComponent } from './products/products.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { FlipcartComponent } from './flipcart/flipcart.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PinterestComponent } from './pinterest/pinterest.component';
 import { AccountsComponent } from './accounts/accounts.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +35,15 @@ import { AccountsComponent } from './accounts/accounts.component';
     FlipcartComponent,
     VehicleComponent,
     PinterestComponent,
-    AccountsComponent
+    AccountsComponent,
+    CreateVehicleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
