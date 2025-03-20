@@ -1,0 +1,14 @@
+.employee{
+    background-color: antiquewhite;
+    height: 100px;
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.thed{
+    background-color: cadetblue;
+}
+.tbdy{
+    background-color: cornsilk;
+}

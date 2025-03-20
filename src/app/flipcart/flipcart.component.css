@@ -66,6 +66,12 @@ input{
     display: flex;
     align-items: center;
 }
+.thed{
+    background-color:darkviolet;
+}
+.tbdy{
+    background-color: azure;
+}
 .delete{
     background-color: red;
     color: white;
