@@ -14,6 +14,7 @@ import { VehicleComponent } from './vehicle/vehicle.component';
 import { PinterestComponent } from './pinterest/pinterest.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreatUserComponent } from './creat-user/creat-user.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -30,7 +31,8 @@ const routes: Routes = [
    {path:'vehicle',component:VehicleComponent},
    {path:'pinterest',component:PinterestComponent},
    {path:'accounts',component:AccountsComponent},
-   {path:'create-vehicle',component:CreateVehicleComponent}
+   {path:'create-vehicle',component:CreateVehicleComponent},
+   {path:'creat-user',component:CreatUserComponent}
   ]}
 ];
 @NgModule({

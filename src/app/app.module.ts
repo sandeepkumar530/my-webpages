@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PinterestComponent } from './pinterest/pinterest.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreatUserComponent } from './creat-user/creat-user.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
     VehicleComponent,
     PinterestComponent,
     AccountsComponent,
-    CreateVehicleComponent
+    CreateVehicleComponent,
+    CreatUserComponent
   ],
   imports: [
     BrowserModule,
