@@ -1,0 +1,56 @@
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .school-logo{
+    width: 120px;
+    height: 120px;
+  }
+  
+  
+  .main{
+    width: 40vw;
+    height: 50vh;
+    background-color: rgb(101, 131, 71);
+    border-radius: 10%;
+    margin-left: 90px;
+    margin-top: 90px;
+    
+}
+.top{
+    /* background-color: cornflowerblue; */
+    height: 45%;
+    width: 100%;
+    border-radius: 90px;
+    display: flex;
+}
+.buttom{
+    /* background-color: rgb(219, 151, 151); */
+    height: 55%;
+    width: 100%;
+    border-radius: 90px;
+    display: flex;
+}
+.left{
+    /* background-color: rgb(70, 194, 194); */
+    width: 25%;
+    height: 100%;
+}
+ .right{
+    width: 75%;
+    height: 100%;
+    /* background-color: black; */
+}
+ .buttomleft{
+    width: 25%;
+    height: 100%;
+    /* background-color: rgb(166, 124, 204); */
+    
+ }
+ .buttomright{
+    width: 75%;
+    height: 100%;
+    /* background-color: rgb(240, 187, 123); */
+ }

@@ -1,0 +1,25 @@
+<div class="main" *ngFor="let studentAPI of studentAPIs">
+    <div class="top">
+        <div class="left">
+            
+            <img [src]="studentAPI.school_logo" alt="Profile Picture" class="school-logo">
+</div>
+        <div class="right">
+            <h2>Name:{{studentAPI.school_name}}</h2>
+            <h6>Email:{{studentAPI.email}}</h6>
+        </div>
+    </div>
+    <div class="buttom">
+        <div class="buttomleft">
+            <img [src]="studentAPI.profile_picture" alt="Profile Picture" class="profile-picture">  
+        </div>
+        <div class="buttomright">
+            <h5>Name:{{studentAPI.name}}</h5>
+            <h6>ID:{{studentAPI.id}}</h6>
+            <h6>DOB{{studentAPI.dob}}</h6>
+            <h6>city:{{studentAPI.city}}</h6>
+            <h6>school_city:{{studentAPI.school_city}}</h6>
+            <h6>phone:{{studentAPI.phone}}</h6>
+        </div>
+    </div>
+</div>

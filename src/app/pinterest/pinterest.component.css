@@ -1,0 +1,14 @@
+img{
+    width: 300px;
+    height: 300px;
+    
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+.box{
+    background-color: beige;
+ }

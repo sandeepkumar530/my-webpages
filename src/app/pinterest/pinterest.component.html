@@ -1,3 +1,11 @@
 <p>pinterest works!</p>
 <h1>Pinterest</h1>
+<div class="main">
+<div class="box" *ngFor="let pinterest of pinterests">
+    <h2>Author:{{ pinterest.author }}</h2>
+    <img [src]="pinterest.download_url" [alt]="pinterest.author" >
+    <div class="btn"><a [href]="pinterest.download_url" download>Download</a></div>
+    
+  </div>
+</div>
 

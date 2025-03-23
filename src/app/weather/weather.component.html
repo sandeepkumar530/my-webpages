@@ -1,0 +1,14 @@
+<p>weather works!</p>
+<div class="box">
+<div *ngIf="weathers">
+    <h1>Weather in Hyderabad</h1>
+    <div class="dot" [ngStyle]="{ backgroundColor: getDotColor(weathers.current_weather.temperature) }"></div>
+    <h2>Current Weather</h2>
+    <p>Temperature: {{ weathers.current_weather.temperature }}°C</p>
+    <p>Wind Speed: {{ weathers.current_weather.windspeed }} km/h</p>
+    <p>Wind Direction: {{ weathers.current_weather.winddirection }}°</p>
+    <p>Weather Code: {{ weathers.current_weather.weathercode }}</p>
+    <p>Time: {{ weathers.current_weather.time | date:'medium':'UTC+5:30' }}</p>
+    <p *ngIf="weathers.current_weather.is_day === 1">Day</p>
+    <p *ngIf="weathers.current_weather.is_day === 0">Night</p>
+  </div></div>

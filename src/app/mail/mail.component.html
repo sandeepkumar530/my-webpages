@@ -1,0 +1,11 @@
+<p>mail works!</p>
+<table class="tbl">
+    <tr>
+      <th>S.No.</th>
+      <th>Title</th>
+    </tr>
+    <tr *ngFor="let mail of mails; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td [ngStyle]="{ color: mail.completed ? 'grey' : 'black' }">{{ mail.title }}</td>
+    </tr>
+  </table>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-creat-user',
@@ -8,7 +8,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class CreatUserComponent {
   public userForm:FormGroup=new FormGroup({
-    name:new FormControl(),
+    name:new FormControl('',[Validators.required,Validators.minLength(6),Validators.maxLength(12)]),
     email:new FormControl(),
     password:new FormControl(),
     mobile:new FormControl(),
@@ -21,7 +21,23 @@ export class CreatUserComponent {
   type:new FormControl(),
 //busFee:new FormControl(),
 //hostelFee:new FormControl(),
+cards:new FormArray([]),
 })
+get cardsFormArray(){
+  return this.userForm.get('cards') as FormArray;
+}
+addcard(){
+  this.cardsFormArray.push(
+    new FormGroup({
+      number:new FormControl(),
+      expiry:new FormControl(),
+      cvv:new FormControl()
+    })
+  )
+}
+deletecard(i:number){
+  this.cardsFormArray.removeAt(i);
+}
 constructor(){
   this.userForm.get('type')?.valueChanges.subscribe(
     (data:any)=>{

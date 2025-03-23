@@ -20,6 +20,11 @@ import { PinterestComponent } from './pinterest/pinterest.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreatUserComponent } from './creat-user/creat-user.component';
+import { CreatStudentComponent } from './creat-student/creat-student.component';
+import { StudentAPIComponent } from './student-api/student-api.component';
+import { WeatherComponent } from './weather/weather.component';
+import { MailComponent } from './mail/mail.component';
+import { FlipcartappComponent } from './flipcartapp/flipcartapp.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +43,12 @@ import { CreatUserComponent } from './creat-user/creat-user.component';
     PinterestComponent,
     AccountsComponent,
     CreateVehicleComponent,
-    CreatUserComponent
+    CreatUserComponent,
+    CreatStudentComponent,
+    StudentAPIComponent,
+    WeatherComponent,
+    MailComponent,
+    FlipcartappComponent
   ],
   imports: [
     BrowserModule,

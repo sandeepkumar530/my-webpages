@@ -7,6 +7,8 @@ import { PinterestService } from '../pinterest.service';
   styleUrls: ['./pinterest.component.css']
 })
 export class PinterestComponent {
+  
+  
   pinterests:any=[];
   constructor(private _pinterestService:PinterestService){
     _pinterestService.getPinterests().subscribe(
@@ -18,5 +20,6 @@ export class PinterestComponent {
       }
     )
   }
+ 
 
 }

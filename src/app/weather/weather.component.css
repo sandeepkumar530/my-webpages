@@ -1,0 +1,19 @@
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .box{
+    height: 400px;
+    width: 400px;
+    background-color: aquamarine;
+    text-align: center;
+    margin-left: 90px;
+    margin-top: 90px;
+    border-radius: 90px;
+  }
+  p{
+    margin: 5px 0;
+  }
+ 

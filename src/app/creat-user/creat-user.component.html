@@ -2,6 +2,11 @@
 <form [formGroup]="userForm">
 <label>Name:</label>
 <input type="text" formControlName="name"><br>
+<div *ngIf="userForm.get('name')?.touched && userForm.get('name')?.invalid">
+    <p *ngIf="userForm.get('name')?.errors?.['required']">Name is Required</p>
+    <p *ngIf="userForm.get('name')?.errors?.['minlength']">Name should be minimum 6 characters</p>
+    <p *ngIf="userForm.get('name')?.errors?.['maxlength']">Name should be maximum of 12 charecters</p>
+</div>
 <label>Email:</label>
 <input type="email" formControlName="email"><br>
 <label>Password</label>
@@ -17,7 +22,7 @@
 <label>Pincode:</label>
 <input type="number" formControlName="pincode"><br>
 </div>
-<button (click)="submit()">submit</button>
+
 
 <label>Type:</label>
 <input type="radio" name="type" formControlName="type" value="dayScholar">
@@ -31,5 +36,22 @@
 <div *ngIf="userForm.get('type')?.value=='residential'">
     <label>Hostel Fee:</label>
     <input type="number" formControlName="hostelFee"><br>
+</div><br>
+<label>Cards:</label>
+<button (click)="addcard()" class="btn btn-warning">Add Card</button><br><br>
+<button (click)="submit()">submit</button>
+
+<div formArrayName="cards">
+<div *ngFor="let card of cardsFormArray.controls;let i=index">
+    <div formGroupName="{{i}}">
+        <h2>card{{i+1}}</h2>
+        <label>Number:</label>
+        <input type="number" formControlName="number"><br>
+        <label>Expiry:</label>
+        <input type="month" formControlName="expiry"><br>
+        <label>CVV:</label>
+        <input type="number" formControlName="cvv"><br>
+        <button (click)="deletecard(i)" class="btn btn-danger">Remove card</button>
+    </div></div>
 </div>
 </form>
