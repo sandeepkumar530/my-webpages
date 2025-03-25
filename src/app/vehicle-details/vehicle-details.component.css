@@ -1,0 +1,14 @@
+.pp{
+    border-radius: 50px;
+}
+.frm{
+    height: 78%;
+    width: 40%;
+    background-color: gray;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-top: 90px;
+    text-align: center;
+    border-style: solid;
+    border-color:yellow
+}

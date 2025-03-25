@@ -1,25 +1,55 @@
+<input type="text" [(ngModel)]="term" (keyup)="filter()" placeholder="Enter the search key word">
+<select [(ngModel)]="column">
+    <option>name</option>
+    <option>phone</option>
+    <option>dob</option>
+    <option>city</option>
+</select>
+
+<select [(ngModel)]="order">
+    <option>asc</option>
+    <option>desc</option>
+</select>
+<button (click)="sort()">sort</button>
+
+<select [(ngModel)]="limit">
+    <option>10</option>
+    <option>20</option>
+    <option>30</option>
+    
+</select>
+
+<select [(ngModel)]="page">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+</select>
+<button (click)="pagination()"> Pagination</button>
 <div class="main" *ngFor="let studentAPI of studentAPIs">
+    
     <div class="top">
-        <div class="left">
-            
-            <img [src]="studentAPI.school_logo" alt="Profile Picture" class="school-logo">
-</div>
-        <div class="right">
-            <h2>Name:{{studentAPI.school_name}}</h2>
+        <div class="topleft">
+            <img [src]="studentAPI.school_logo" alt="Profile Picture" class="school_logo">
+        </div>
+        <div class="topright">
+            <h5>{{studentAPI.school_name}}</h5>
+        </div>
+    </div>
+    <div class="middel">
+        <div class="middelleft">
+            <h6>Name:{{studentAPI.name}}</h6>
+            <h6>phone:{{studentAPI.phone}}</h6>
+            <h6>DOB{{studentAPI.dob}}</h6>
+            <h6>city:{{studentAPI.city}}</h6>
             <h6>Email:{{studentAPI.email}}</h6>
+        </div>
+        <div class="middelright">
+            <img [src]="studentAPI.profile_picture" alt="Profile Picture" class="profile-picture">
         </div>
     </div>
     <div class="buttom">
-        <div class="buttomleft">
-            <img [src]="studentAPI.profile_picture" alt="Profile Picture" class="profile-picture">  
-        </div>
-        <div class="buttomright">
-            <h5>Name:{{studentAPI.name}}</h5>
-            <h6>ID:{{studentAPI.id}}</h6>
-            <h6>DOB{{studentAPI.dob}}</h6>
-            <h6>city:{{studentAPI.city}}</h6>
-            <h6>school_city:{{studentAPI.school_city}}</h6>
-            <h6>phone:{{studentAPI.phone}}</h6>
-        </div>
+        <button class="one" style="color:white;">View</button>
+        <button class="two" style="color:white;">Edit</button>
+        <button class="three" style="color:white;">Delete</button>
     </div>
 </div>

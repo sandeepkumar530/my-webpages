@@ -25,6 +25,8 @@ import { StudentAPIComponent } from './student-api/student-api.component';
 import { WeatherComponent } from './weather/weather.component';
 import { MailComponent } from './mail/mail.component';
 import { FlipcartappComponent } from './flipcartapp/flipcartapp.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { EditVehicleComponent } from './edit-vehicle/edit-vehicle.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { FlipcartappComponent } from './flipcartapp/flipcartapp.component';
     StudentAPIComponent,
     WeatherComponent,
     MailComponent,
-    FlipcartappComponent
+    FlipcartappComponent,
+    VehicleDetailsComponent,
+    EditVehicleComponent
   ],
   imports: [
     BrowserModule,

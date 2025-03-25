@@ -38,6 +38,8 @@
             <th>color</th>
             <th>cost</th>
             <th>fuel</th>
+            <th>EDit</th>
+            <th>View</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -49,10 +51,14 @@
         <td>{{vehicle.cost}}</td>
         <td>{{vehicle.fuel}}</td>
         <td>
-            <button (click)="delete(vehicle.id)"
+            <button routerLink="/home/edit-vehicle/{{vehicle.id}}" class="btn btn-warning">Edit</button></td>
+        <td>
+            <button routerLink="/home/vehicle-details/{{vehicle.id}}" class="btn btn-primary">View</button></td>
+
+            
+            <td><button (click)="delete(vehicle.id)"
                 class="btn btn-danger">Delete
-            </button>
-        </td>
+            </button></td>
     </tr>
 </tbody>
 </table>

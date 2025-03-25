@@ -20,6 +20,9 @@ import { StudentAPIComponent } from './student-api/student-api.component';
 import { WeatherComponent } from './weather/weather.component';
 import { MailComponent } from './mail/mail.component';
 import { FlipcartappComponent } from './flipcartapp/flipcartapp.component';
+import { VehicleDetailsService } from './vehicle-details.service';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { EditVehicleComponent } from './edit-vehicle/edit-vehicle.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -42,7 +45,9 @@ const routes: Routes = [
    {path:'studentAPI',component:StudentAPIComponent},
    {path:'weather',component:WeatherComponent},
    {path:'mail',component:MailComponent},
-   {path:'flipcartapp',component:FlipcartappComponent}
+   {path:'flipcartapp',component:FlipcartappComponent},
+   {path:'vehicle-details/:id',component:VehicleDetailsComponent},
+   {path:'edit-vehicle/:id',component:CreateVehicleComponent}
   ]}
 ];
 @NgModule({
