@@ -23,10 +23,14 @@ import { FlipcartappComponent } from './flipcartapp/flipcartapp.component';
 import { VehicleDetailsService } from './vehicle-details.service';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { EditVehicleComponent } from './edit-vehicle/edit-vehicle.component';
+import { AuthenticationGuard } from './authentication.guard';
+import { LoginComponent } from './login/login.component';
+import { Sibiling1Component } from './sibiling1/sibiling1.component';
+import { ParentComponent } from './parent/parent.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
-  {path:'home',component:HomeComponent,children:[
+  {path:'home',component:HomeComponent,canActivate:[AuthenticationGuard],children:[
    {path:'welcome',component:WelcomeComponent},
    {path:'calculator',component:CalculatorComponent},
    {path:'databinding',component:DatabindingComponent},
@@ -47,7 +51,10 @@ const routes: Routes = [
    {path:'mail',component:MailComponent},
    {path:'flipcartapp',component:FlipcartappComponent},
    {path:'vehicle-details/:id',component:VehicleDetailsComponent},
-   {path:'edit-vehicle/:id',component:CreateVehicleComponent}
+   {path:'edit-vehicle/:id',component:CreateVehicleComponent},
+   {path:'login',component:LoginComponent},
+   {path:'sibiling1',component:Sibiling1Component},
+   {path:'parent',component:ParentComponent}
   ]}
 ];
 @NgModule({

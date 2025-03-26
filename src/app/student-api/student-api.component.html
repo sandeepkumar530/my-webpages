@@ -1,4 +1,5 @@
-<input type="text" [(ngModel)]="term" (keyup)="filter()" placeholder="Enter the search key word">
+
+    <input type="text" [(ngModel)]="term" (keyup)="filter()" placeholder="Enter the search key word">
 <select [(ngModel)]="column">
     <option>name</option>
     <option>phone</option>
@@ -25,7 +26,10 @@
     <option>3</option>
 </select>
 <button (click)="pagination()"> Pagination</button>
-<div class="main" *ngFor="let studentAPI of studentAPIs">
+
+<div class="stu"  *ngFor="let studentAPI of studentAPIs">
+
+<div class="main">
     
     <div class="top">
         <div class="topleft">
@@ -52,4 +56,6 @@
         <button class="two" style="color:white;">Edit</button>
         <button class="three" style="color:white;">Delete</button>
     </div>
+</div>
+
 </div>

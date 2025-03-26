@@ -1,0 +1,11 @@
+<p>login works!</p>
+<div class="log">
+<button routerLink="/home">Click here to redirect to Home</button>
+<form [formGroup]="loginForm">
+    <label>Email:</label>
+    <input type="email" formControlName="email"><br>
+    <label>Password:</label>
+    <input type="password" formControlName="password"><br>
+    <button class="btn btn-primary" (click)="login()">Login</button>
+</form>
+</div>

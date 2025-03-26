@@ -27,6 +27,12 @@ import { MailComponent } from './mail/mail.component';
 import { FlipcartappComponent } from './flipcartapp/flipcartapp.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { EditVehicleComponent } from './edit-vehicle/edit-vehicle.component';
+import { LoginComponent } from './login/login.component';
+import { Sibiling1Component } from './sibiling1/sibiling1.component';
+import { Sibiling2Component } from './sibiling2/sibiling2.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { RatingComponent } from './rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +58,13 @@ import { EditVehicleComponent } from './edit-vehicle/edit-vehicle.component';
     MailComponent,
     FlipcartappComponent,
     VehicleDetailsComponent,
-    EditVehicleComponent
+    EditVehicleComponent,
+    LoginComponent,
+    Sibiling1Component,
+    Sibiling2Component,
+    ParentComponent,
+    ChildComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,

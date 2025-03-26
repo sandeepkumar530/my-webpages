@@ -1,0 +1,12 @@
+.log{
+    height: 40%;
+    width: 30%;
+    background-color: rgb(158, 158, 99);
+    text-align: center;
+    margin-left: 90px;
+    margin-top: 90px;
+    padding: 40px;
+    display: flex;
+    justify-content:space-between;
+    border-radius: 30px;
+}
