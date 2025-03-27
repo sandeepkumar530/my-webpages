@@ -18,7 +18,7 @@
         <tr *ngFor="let accounts of accountss; let i=index">
             <td>{{i+1}}</td>
             <td>{{accounts.account_name}}</td>
-            <td>{{accounts.available_balance}}</td>
+            <td>{{accounts.available_balance | balance}}</td>
             <td>{{accounts.account_number}}</td>
             <td>{{accounts.city}}</td>
             <td>{{accounts.profile_picture}}</td>

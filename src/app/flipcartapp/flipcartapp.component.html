@@ -1,11 +1,11 @@
 <p>flipcartapp works!</p>
 <div class="product-list">
-    <div class="product" *ngFor="let flipcartapp  of flipcartapps">
+    <div class="product" *ngFor="let flipcartapp  of flipcartapps" >
       <img [src]="flipcartapp.image" alt="{{ flipcartapp.title }}" >
       <h5>{{ flipcartapp.title }}</h5>
       <!-- <p>{{ flipcartapp.description }}</p> -->
        <p>{{flipcartapp.category}}</p>
-      <p style="color:red;">Price:Rs{{ flipcartapp.price }}</p>
-      <p style="color:gray">Rating:{{flipcartapp.rating.rate}}</p>
+      <p style="color:red;">Price:Rs{{ flipcartapp.price | balance }}</p>
+      <p style="color:gray"><app-rating [rating]="flipcartapp   .rating?.rate"></app-rating></p>
     </div>
   </div>

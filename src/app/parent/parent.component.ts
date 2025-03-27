@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./parent.component.css']
 })
 export class ParentComponent {
+  // capture(value:number){
+  //   alert(value);
+  // }
+  capture(value:string){
+    alert(value);
+  }
+
 
 }

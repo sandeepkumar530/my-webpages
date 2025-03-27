@@ -48,7 +48,7 @@
         <td>{{i+1}}</td>
         <td>{{vehicle.Vehicle}}</td>
         <td>{{vehicle.color}}</td>
-        <td>{{vehicle.cost}}</td>
+        <td>{{vehicle.cost | balance}}</td>
         <td>{{vehicle.fuel}}</td>
         <td>
             <button routerLink="/home/edit-vehicle/{{vehicle.id}}" class="btn btn-warning">Edit</button></td>

@@ -1,3 +1,7 @@
 <p>parent works!</p>
-<app-child [a]="10"></app-child>
-<app-rating [rating]="5"></app-rating>
+<app-child [a]="10" (childEvent)="capture($event)"></app-child>
+
+<!-- <app-rating [rating]="5"></app-rating> -->
+<!-- <img src="{{flipcartapp.image}}" alt="" width="100px"> -->
+ 
+ 
