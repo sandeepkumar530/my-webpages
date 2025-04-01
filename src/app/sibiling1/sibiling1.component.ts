@@ -8,7 +8,10 @@ import { CommonService } from '../common.service';
 })
 export class Sibiling1Component {
   count:number=0;
-  constructor(private _commonService:CommonService){}
+  
+  constructor(private _commonService:CommonService){
+    
+  }
   send(){
     console.log(this.count);
     this._commonService.countSub.next(this.count);
