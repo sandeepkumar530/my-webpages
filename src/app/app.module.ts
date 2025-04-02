@@ -36,6 +36,9 @@ import { RatingComponent } from './rating/rating.component';
 import { CapitalDirective } from './capital.directive';
 import { BalancePipe } from './balance.pipe';
 import { TokenInterceptor } from './token.interceptor';
+import { AboutCompanyComponent } from './about-company/about-company.component';
+import { AboutCeoComponent } from './about-ceo/about-ceo.component';
+import { AboutUsModule } from './about-us/about-us.module';
 
 @NgModule({
   declarations: [
@@ -70,20 +73,23 @@ import { TokenInterceptor } from './token.interceptor';
     RatingComponent,
     CapitalDirective,
     BalancePipe,
+    AboutCompanyComponent,
+    
+    AboutCeoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AboutUsModule
   ],
-  providers: [
-    {
-      provide:HTTP_INTERCEPTORS,
-      useClass:TokenInterceptor,
-      multi:true
-    }
+  providers: [{
+    provide:HTTP_INTERCEPTORS,
+    useClass:TokenInterceptor,
+    multi:true
+  }
   ],
   bootstrap: [AppComponent]
 })

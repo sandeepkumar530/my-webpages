@@ -1,5 +1,5 @@
 import { Component, NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, PreloadingStrategy, RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { CalculatorComponent } from './calculator/calculator.component';
@@ -27,6 +27,8 @@ import { AuthenticationGuard } from './authentication.guard';
 import { LoginComponent } from './login/login.component';
 import { Sibiling1Component } from './sibiling1/sibiling1.component';
 import { ParentComponent } from './parent/parent.component';
+import { AboutCeoComponent } from './about-ceo/about-ceo.component';
+import { AboutCompanyComponent } from './about-company/about-company.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -54,11 +56,16 @@ const routes: Routes = [
    {path:'edit-vehicle/:id',component:CreateVehicleComponent},
    {path:'login',component:LoginComponent},
    {path:'sibiling1',component:Sibiling1Component},
-   {path:'parent',component:ParentComponent}
+   {path:'parent',component:ParentComponent},
+   {path:'about-ceo',component:AboutCeoComponent},
+   {path:'about-company',component:AboutCompanyComponent},
+   {
+    path:'payments',loadChildren:()=>
+import('./payments/payments.module').then(m=>m.PaymentsModule)   }
   ]}
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{preloadingStrategy:PreloadAllModules})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
