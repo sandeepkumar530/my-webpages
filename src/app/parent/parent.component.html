@@ -1,3 +1,9 @@
 <p>parent works!</p>
 <app-child [a]="10"></app-child>
 <app-rating [rating]="5"></app-rating>
+
+<!-- <textarea [(ngModel)]="text" (input)="limitText()" maxlength="50"></textarea>
+<p>Characters left: {{ 50 - text.length }}</p> -->
+   
+    <textarea id="textArea" maxlength="50" [(ngModel)]="textInput" name="textInput"></textarea>
+    <p>{{ textInput.length }} / 50</p> 

@@ -27,6 +27,7 @@ import { AuthenticationGuard } from './authentication.guard';
 import { LoginComponent } from './login/login.component';
 import { Sibiling1Component } from './sibiling1/sibiling1.component';
 import { ParentComponent } from './parent/parent.component';
+import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -54,7 +55,8 @@ const routes: Routes = [
    {path:'edit-vehicle/:id',component:CreateVehicleComponent},
    {path:'login',component:LoginComponent},
    {path:'sibiling1',component:Sibiling1Component},
-   {path:'parent',component:ParentComponent}
+   {path:'parent',component:ParentComponent},
+   {path:'life-cycle-hooks',component:LifeCycleHooksComponent}
   ]}
 ];
 @NgModule({

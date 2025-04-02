@@ -33,6 +33,7 @@ import { Sibiling2Component } from './sibiling2/sibiling2.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { RatingComponent } from './rating/rating.component';
+import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { RatingComponent } from './rating/rating.component';
     Sibiling2Component,
     ParentComponent,
     ChildComponent,
-    RatingComponent
+    RatingComponent,
+    LifeCycleHooksComponent
   ],
   imports: [
     BrowserModule,
