@@ -30,7 +30,7 @@ import { ParentComponent } from './parent/parent.component';
 import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
 
 const routes: Routes = [
-  {path:'',component:HomeComponent},
+  {path:'',component:LoginComponent},
   {path:'home',component:HomeComponent,canActivate:[AuthenticationGuard],children:[
    {path:'welcome',component:WelcomeComponent},
    {path:'calculator',component:CalculatorComponent},
@@ -53,7 +53,7 @@ const routes: Routes = [
    {path:'flipcartapp',component:FlipcartappComponent},
    {path:'vehicle-details/:id',component:VehicleDetailsComponent},
    {path:'edit-vehicle/:id',component:CreateVehicleComponent},
-   {path:'login',component:LoginComponent},
+   
    {path:'sibiling1',component:Sibiling1Component},
    {path:'parent',component:ParentComponent},
    {path:'life-cycle-hooks',component:LifeCycleHooksComponent}
